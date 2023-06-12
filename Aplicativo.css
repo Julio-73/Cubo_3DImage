@@ -1,0 +1,564 @@
+/* ESTILO CSS */
+
+  @import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+
+
+/* -------> Estilo Principal <------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  perspective: 1000px;
+
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+
+.contenedor {
+  text-align: center;
+}
+
+/* -------> Estilo cubo 3d <------------ */
+
+.lado {
+  height: 300px;
+  width: 300px;
+  animation: girar 4s linear infinite;
+  position: absolute;
+  opacity: 0.9;
+  cursor: pointer;
+  background-color: red;
+}
+
+@keyframes girar {
+  from {
+    transform: rotatex(360deg) translateZ(150px);
+    z-index: 10;
+  }
+
+  50% {
+    z-index: -10;
+  }
+
+  to {
+    transform: rotateX(0) translateZ(150px);
+    z-index: 10;
+  }
+}
+
+#lado_d {
+  background-image: url(img-1/linut_1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#lado_d:hover {
+  box-shadow: 1px -1px 17px 0px rgba(237, 0, 0, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(237, 0, 0, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(237, 0, 0, 0.75);
+}
+
+#lado_c {
+  background-image: url(img-1/cubo3_1.png);
+  background-size: cover;
+  background-position: center;
+  animation-delay: -1s;
+}
+
+#lado_c:hover {
+  box-shadow: 1px -1px 17px 0px rgba(76, 54, 240, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(43, 46, 240, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(83, 55, 243, 0.75);
+}
+
+#lado_b {
+  background-image: url(img-1/rabit_1.png);
+  background-size: cover;
+  background-position: center;
+  animation-delay: -2s;
+}
+
+#lado_b:hover {
+  box-shadow: 1px -1px 17px 0px rgba(7, 78, 171, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(7, 56, 188, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(8, 32, 190, 0.75);
+}
+
+#lado_a {
+  background-image: url(img-1/cubo_1.png);
+  background-size: cover;
+  background-position: center;
+  animation-delay: -3s;
+}
+
+#lado_a:hover {
+  box-shadow: 1px -1px 17px 0px rgba(198, 28, 19, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(234, 38, 38, 0.921);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(224, 28, 28, 0.75);
+}
+
+/* top*/
+
+.lado_2 {
+  height: 300px;
+  width: 300px;
+  animation: girar_2 4s linear infinite;
+  position: absolute;
+}
+
+@keyframes girar_2 {
+  from {
+    transform: rotatex(360deg) rotateY(90deg);
+  }
+
+  to {
+    transform: rotateX(0deg) rotateY(90deg);
+  }
+}
+
+#lado_e {
+  margin-bottom: 300px;
+  background-image: url(img-1/Screensho7t_1.png);
+}
+
+#lado_f {
+  margin-top: 300px;
+  background-image: url(img-1/Screensho7t_1.png);
+}
+
+/* -------> Estilo 2 cubo 3d <------------ */
+
+.contenedor {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  perspective: 1000px;
+
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+
+body {
+}
+
+.contenedor {
+  text-align: center;
+}
+
+.lad {
+  height: 300px;
+  width: 300px;
+  animation: girar1 4s linear infinite;
+  position: absolute;
+  opacity: 0.9;
+  cursor: pointer;
+  background-color: red;
+}
+
+/* keyframes */
+
+@keyframes girar1 {
+  from {
+    transform: rotateY(360deg) translateZ(150px);
+    z-index: 10;
+  }
+
+  50% {
+    z-index: -10;
+  }
+
+  to {
+    transform: rotateY(0) translateZ(150px);
+    z-index: 10;
+  }
+}
+
+/* lado 1*/
+
+#lado_1 {
+  background-image: url(img/anime3t_1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#lado_1:hover {
+  box-shadow: 1px -1px 17px 0px rgba(237, 0, 0, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(237, 0, 0, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(237, 0, 0, 0.75);
+}
+
+/* lado 2*/
+
+#lado_2 {
+  background-image: url(img/anime67.png);
+  background-size: cover;
+  background-position: center;
+  animation-delay: -1s;
+}
+
+#lado_2:hover {
+  box-shadow: 1px -1px 17px 0px rgba(76, 54, 240, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(43, 46, 240, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(83, 55, 243, 0.75);
+}
+
+/* lado 3*/
+
+#lado_3 {
+  background-image: url(img/anim\,e5_1.png);
+  background-size: cover;
+  background-position: center;
+  animation-delay: -2s;
+}
+
+#lado_3:hover {
+  box-shadow: 1px -1px 17px 0px rgba(76, 54, 240, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(43, 46, 240, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(83, 55, 243, 0.75);
+}
+
+/* lado 4*/
+
+#lado_4 {
+  background-image: url(img/tex_1.png);
+  background-size: cover;
+  background-position: center;
+  animation-delay: -3s;
+}
+
+#lado_4:hover {
+  box-shadow: 1px -1px 17px 0px rgba(76, 54, 240, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(43, 46, 240, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(83, 55, 243, 0.75);
+}
+
+/* top*/
+
+.lad_N {
+  height: 300px;
+  width: 300px;
+  animation: girar_3 4s linear infinite;
+  position: absolute;
+}
+
+@keyframes girar_3 {
+  from {
+    transform: rotateY(360deg) rotateX(90deg);
+  }
+
+  to {
+    transform: rotateY(0deg) rotatex(90deg);
+  }
+}
+
+#lado_5 {
+  margin-bottom: 300px;
+  background-image: url(img-1/cubo5_1.png);
+}
+
+#lado_6 {
+  margin-top: 300px;
+  background-image: url(img-1/cubo5_1.png);
+}
+
+/* -------> Estilo 3 cubo 3d <------------ */
+
+.conteiner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  perspective: 1000px;
+
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+
+.contenedor {
+  text-align: center;
+}
+
+.laddo {
+  height: 300px;
+  width: 300px;
+  animation: girar4 4s linear infinite;
+  position: absolute;
+  opacity: 0.9;
+  cursor: pointer;
+  background-color: red;
+}
+
+/* keframes */
+
+@keyframes girar4 {
+  from {
+    transform: rotateX(360deg) translateZ(150px);
+    z-index: 10;
+  }
+
+  50% {
+    z-index: -10;
+  }
+
+  to {
+    transform: rotatex(0) translateZ(150px);
+    z-index: 10;
+  }
+}
+
+/* lado a */
+
+#laddo_a {
+  background-image: url(img-2/cubos_1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#laddo_a:hover {
+  box-shadow: 1px -1px 17px 0px rgba(237, 0, 0, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(237, 0, 0, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(237, 0, 0, 0.75);
+}
+
+/* laddo b*/
+
+#laddo_b {
+  background-image: url(img-2/delta4t_1.png);
+  background-size: cover;
+  background-position: center;
+  animation-delay: -1s;
+}
+
+#laddo_b:hover {
+  box-shadow: 1px -1px 17px 0px rgba(76, 54, 240, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(43, 46, 240, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(83, 55, 243, 0.75);
+}
+
+/* lado c*/
+
+#laddo_c {
+  background-image: url(img-2/delta5_1.png);
+  background-size: cover;
+  background-position: center;
+  animation-delay: -2s;
+}
+
+#laddo_c:hover {
+  box-shadow: 1px -1px 17px 0px rgba(7, 78, 171, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(7, 56, 188, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(8, 32, 190, 0.75);
+}
+
+/* lado d*/
+
+#laddo_d {
+  background-image: url(img-2/delta_1.png);
+  background-size: cover;
+  background-position: center;
+  animation-delay: -3s;
+}
+
+#laddo_d:hover {
+  box-shadow: 1px -1px 17px 0px rgba(7, 78, 171, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(7, 56, 188, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(8, 32, 190, 0.75);
+}
+
+/* top*/
+
+.laddo_2 {
+  height: 300px;
+  width: 300px;
+  animation: girar_5 4s linear infinite;
+  position: absolute;
+}
+
+@keyframes girar_5 {
+  from {
+    transform: rotatex(360deg) rotateY(90deg);
+  }
+
+  to {
+    transform: rotatex(0deg) rotateY(90deg);
+  }
+}
+
+#laddo_e {
+  margin-bottom: 300px;
+  background-image: url(img-2/delta4t_1.png);
+}
+
+#laddo_f {
+  margin-top: 300px;
+  background-image: url(img-2/delta4t_1.png);
+}
+
+/* -------> Estilo  cubo 4  3d <------------ */
+
+.ladddo {
+  height: 300px;
+  width: 300px;
+  animation: girar5 4s linear infinite;
+  position: absolute;
+  opacity: 0.9;
+  cursor: pointer;
+  background-color: red;
+}
+
+/* keframes */
+
+@keyframes girar5 {
+  from {
+    transform: rotateY(360deg) translateZ(150px);
+    z-index: 10;
+  }
+
+  50% {
+    z-index: -10;
+  }
+
+  to {
+    transform: rotateY(0) translateZ(150px);
+    z-index: 10;
+  }
+}
+
+/* ladddo a */
+
+#ladddo_a {
+  background-image: url(img-3/img6_1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#ladddo_a:hover {
+  box-shadow: 1px -1px 17px 0px rgba(237, 0, 0, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(237, 0, 0, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(237, 0, 0, 0.75);
+}
+
+/* ladddo b*/
+
+#ladddo_b {
+  background-image: url(img-3/img2_1.png);
+  background-size: cover;
+  background-position: center;
+  animation-delay: -1s;
+}
+
+#ladddo_b:hover {
+  box-shadow: 1px -1px 17px 0px rgba(76, 54, 240, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(43, 46, 240, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(83, 55, 243, 0.75);
+}
+
+/* ladddo b*/
+
+#ladddo_c {
+  background-image: url(img-3/img3_1.png);
+  background-size: cover;
+  background-position: center;
+  animation-delay: -2s;
+}
+
+#ladddo_c:hover {
+  box-shadow: 1px -1px 17px 0px rgba(76, 54, 240, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(43, 46, 240, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(83, 55, 243, 0.75);
+}
+
+/* ladddo b*/
+
+#ladddo_d {
+  background-image: url(img-3/img5_1.png);
+  background-size: cover;
+  background-position: center;
+  animation-delay: -3s;
+}
+
+#ladddo_d:hover {
+  box-shadow: 1px -1px 17px 0px rgba(76, 54, 240, 0.75);
+  -webkit-box-shadow: 1px -1px 17px 0px rgba(43, 46, 240, 0.75);
+  -moz-box-shadow: 1px -1px 17px 0px rgba(83, 55, 243, 0.75);
+}
+
+/* top*/
+
+.ladddo_2 {
+  height: 300px;
+  width: 300px;
+  animation: girar_7 4s linear infinite;
+  position: absolute;
+}
+
+@keyframes girar_7 {
+  from {
+    transform: rotateY(360deg) rotateX(90deg);
+  }
+
+  to {
+    transform: rotateY(0deg) rotateX(90deg);
+  }
+}
+
+#ladddo_e {
+  margin-bottom: 300px;
+  background-image: url(img-3/img3_1.png);
+}
+
+#ladddo_f {
+  margin-top: 300px;
+  background-image: url(img-3/img3_1.png);
+}
+
+
+footer{
+    color: rgba(116, 109, 109, 0.611);
+text-align: center;
+text-justify: distribute;
+font-size: 7px;
+font-family: 'Kablammo', cursive;
+padding-top: 3rem;
+padding-bottom: 1rem ;
+}
+
+h1{
+    
+    color: rgba(116, 109, 109, 0.611);
+text-align: center;
+text-justify: distribute;
+font-size: 2rem;
+font-family: 'Kablammo', cursive;
+padding-top: 2rem;
+padding-bottom: 5rem ;
+transition: 4s;
+}
+
+h1:hover{
+color: rgba(181, 4, 4, 0.663);
+
+}
+
